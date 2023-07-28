@@ -1,0 +1,161 @@
+:root {
+  --cinza: #A3A3A3;
+  --preto: #464646;
+  --laranja: #FFB050;
+  --branco: #FFFFFF;
+  --off-white: #ECECEC;
+  --azul: #4894FF;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  width: 360px;
+}
+
+/*HEADER*/
+
+.status-celular {
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.celular-icones img {
+  padding-left: 16px;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+}
+
+.profile-imagem {
+  width: 57px;
+  border-radius: 50%;
+  margin: 16px;
+}
+
+.cabecalho h1 {
+  color: var(--preto);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.cabecalho span {
+  font-size: 14px;
+  color: var(--cinza);
+  line-height: 22px;
+}
+
+/*MAIN*/
+
+main {
+  color: var(--preto);
+}
+
+.dia {
+  width: 328px;
+  margin: 0 auto;
+}
+
+.dia h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0;
+  line-height: 25px;
+}
+
+.paciente {
+  padding: 16px;
+}
+
+.paciente-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.paciente-info {
+  display: flex;
+}
+
+.paciente-imagem {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.paciente h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.tipo-consulta {
+  display: flex;
+  color: var(--cinza);
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.tipo-consulta img {
+  margin-right: 8px;
+}
+
+.horario {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/*BOTÕES*/
+
+.opcao-consulta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.videochamada {
+  border: none;
+  border-radius: 8px;
+  background: var(--laranja);
+  width: 47%;
+  height: 48px;
+  color: var(--branco);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.ligacao {
+  border: solid 1px var(--off-white);
+  border-radius: 8px;
+  background: var(--branco);
+  width: 47%;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.endereco {
+  border: none;
+  border-radius: 8px;
+  background: var(--azul);
+  color: var(--branco);
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px;
+}
