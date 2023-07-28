@@ -58,6 +58,7 @@ body {
 
 main {
   color: var(--preto);
+  margin-bottom: 50px;
 }
 
 .dia {
@@ -158,4 +159,83 @@ main {
   font-weight: 500;
   text-align: center;
   margin-top: 8px;
+}
+
+/*RODAPÉ*/
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--branco);  
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.3);
+  width: 360px;
+
+}
+
+.menu-rodape button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-rodape {
+  width: 60px;
+  text-align: center;
+}
+
+.icone-rodape {
+  margin: 5px;
+}
+
+.rodope-descricao {
+  font-size: 12px;
+}
+
+.consultas {
+  color: var(--azul);
+}
+
+/*MENU ADICIONAR*/
+.menu-flutuante {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  bottom: 50px;
+}
+.botao-flutuante {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.botao-flutuante button {
+  border: none;
+  background: transparent;
+}
+
+.botao-flutuante img {
+  cursor: pointer;
+}
+
+.botao-componentes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.botao-descricao {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: var(--branco);
+  border-radius: 2323px;
+  border: solid 1px var(--off-white);
+  padding: 0 8px;
 }
