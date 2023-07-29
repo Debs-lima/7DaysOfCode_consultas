@@ -12,7 +12,7 @@ __Mobile First__.
 ## Desafio
 <hr>
 Desenvolver uma página responsiva para que médicos e médicas possam ter controle sobre todas suas consultas agendadas, sejam elas presenciais ou remotas! O layout da página foi disponibilizado através do <a href="https://www.figma.com/file/4OjHFmeHAgfX2JpRymOeA0/7days---Responsividade?type=design&node-id=0%3A1&mode=design&t=6VYD1vRO2gW55qOj-1">Figma</a>.  
-<img align="right" src="./assets/images/rotating-schedule.gif" alt="Gif of a Sloth rolling over in bed."/>
+<img align="right" src="./assets/imagens/rotating-schedule.gif" width="200" alt="Gif of a Sloth rolling over in bed."/>
 
 
 ### Dia 1
