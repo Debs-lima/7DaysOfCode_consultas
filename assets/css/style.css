@@ -2,9 +2,12 @@
   --cinza: #A3A3A3;
   --preto: #464646;
   --laranja: #FFB050;
+  --laranja-hover: #ffa83e;
   --branco: #FFFFFF;
   --off-white: #ECECEC;
   --azul: #4894FF;
+  --azul-hover: #4786F0;
+  --cinza-claro: #CFCFCF;
 }
 
 
@@ -14,8 +17,10 @@ box-sizing: border-box;
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  width: 360px;
+  font-size: 0.9rem;
+  min-width: 360px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /*HEADER*/
@@ -26,7 +31,11 @@ body {
   justify-content: space-between;
 }
 
-.celular-icones img {
+.celular-icones {
+  display: flex;  
+}
+
+.icone-status {
   padding-left: 16px;
 }
 
@@ -36,38 +45,43 @@ body {
 }
 
 .profile-imagem {
-  width: 57px;
+  min-width: 57px;
+  width: 6vw;
   border-radius: 50%;
   margin: 16px;
 }
 
 .cabecalho h1 {
   color: var(--preto);
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 44px;
 }
 
 .cabecalho span {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--cinza);
   line-height: 22px;
 }
 
 /*MAIN*/
 
-main {
+.card-consultas {
   color: var(--preto);
-  margin-bottom: 50px;
+  margin: 0 auto; 
+  padding: 0 16px;
+  max-width: 1400px;
+  min-width: 360px;
+  height: 100%;
 }
 
 .dia {
-  width: 328px;
-  margin: 0 auto;
+  width: 100%;
+  
 }
 
-.dia h2 {
-  font-size: 16px;
+.card-consultas h2 {
+  font-size: 1rem;
   font-weight: 700;
   margin: 8px 0;
   line-height: 25px;
@@ -75,6 +89,8 @@ main {
 
 .paciente {
   padding: 16px;
+  width: 360px;
+  margin: 0 auto;
 }
 
 .paciente-header {
@@ -88,14 +104,14 @@ main {
 }
 
 .paciente-imagem {
-  width: 32px;
-  height: 32px;
+  min-width: 32px;
+  width: 4vw;
   border-radius: 50%;
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 .paciente h3 {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 22px;
 }
@@ -103,7 +119,7 @@ main {
 .tipo-consulta {
   display: flex;
   color: var(--cinza);
-  font-size: 12px;
+  font-size: 0.7rem;
   line-height: 19px;
 }
 
@@ -112,7 +128,7 @@ main {
 }
 
 .horario {
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: 500;
 }
 
@@ -130,19 +146,19 @@ main {
   width: 47%;
   height: 48px;
   color: var(--branco);
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
   margin-top: 8px;
 }
 
 .ligacao {
-  border: solid 1px var(--off-white);
+  border: solid 1px var(--cinza-claro);
   border-radius: 8px;
   background: var(--branco);
   width: 47%;
   height: 48px;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
   margin-top: 8px;
@@ -155,10 +171,25 @@ main {
   color: var(--branco);
   width: 100%;
   height: 48px;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
   margin-top: 8px;
+}
+
+.endereco:hover {
+  background: var(--azul-hover);
+  cursor: pointer;
+}
+
+.videochamada:hover {
+  background: var(--laranja-hover);
+  cursor: pointer;
+}
+
+.ligacao:hover {
+  background: var(--off-white);
+  cursor: pointer;
 }
 
 /*RODAPÉ*/
@@ -173,7 +204,9 @@ main {
   padding-bottom: 8px;
   border-radius: 12px 12px 0 0;
   box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.3);
-  width: 360px;
+  width: 100%;
+  max-width: 1400px;
+  min-width: 360px;
   z-index: 4;
 }
 
@@ -192,12 +225,23 @@ main {
   margin: 5px;
 }
 
-.rodope-descricao {
-  font-size: 12px;
+.adicional .icone-rodape{
+  margin: 0;
 }
 
-.consultas {
+.rodope-descricao {
+  font-size: 1rem;
+}
+
+.botao-rodape:hover,
+  .botao-rodape > a:hover {
   color: var(--azul);
+}
+
+a, 
+  a:visited{
+  text-decoration: none;
+  color: var(--preto);
 }
 
 /*MENU ADICIONAR*/
@@ -209,7 +253,7 @@ main {
   z-index: 5;
 }
 .botao-flutuante {
-  position: absolute;
+  position: relative;
   bottom: 10px;
   display: flex;
   flex-direction: column-reverse;
@@ -222,6 +266,8 @@ main {
 
 .botao-flutuante img {
   cursor: pointer;
+  min-width: 88px;
+  width: 7vw;
 }
 
 .botao-componentes {
@@ -232,7 +278,7 @@ main {
 
 .botao-descricao {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: 500;
   line-height: 20px;
   background-color: var(--branco);
@@ -246,7 +292,79 @@ main {
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.4);
-    width: 360px;
+    width: 100%;
     height: 100%;
     display: block;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width:720px) {
+  .adicional {
+    display: none;
+  }
+}
+
+@media screen and (min-width:720px) and (max-width:1200px) {
+  .dia {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-template-rows: auto;
+    justify-content: space-evenly;  
+  }
+
+  .adicional {
+    display: none;
+  }
+
+ }
+
+ @media screen and (min-width:1200px) {
+  .status-celular {
+    display: none;
+  }
+
+  .dia {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+  }
+
+  .rodape {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 0px;
+    max-width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding-top: 20px;
+  }
+
+  .menu-rodape {
+    margin: 10px 0 10px 0;
+  }
+
+  .botao-rodape,
+    a {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    min-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  body {
+    margin-left: 200px;
+  }
+
+  .menu-flutuante {
+    display: none;
+  }
 }

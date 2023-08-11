@@ -1,6 +1,8 @@
 const botaoFlutuante = document.querySelector('.botao-flutuante');
 const botaoAdicionar = document.querySelector('.botao-adicionar');
 const tela = document.querySelector('.aplicar-filtro');
+const rodape = document.querySelector('.rodape');
+const desktop = document.querySelector('.desktop');
 
 let clicado = false;
 

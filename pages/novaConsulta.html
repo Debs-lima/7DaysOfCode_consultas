@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/novaConsulta.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Nova Consulta</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo-form">Adicionar nova consulta</h1>
+    </header>
+    <main>
+      <section class="formulario">
+        <form class="formulario-desktop">
+          <div class="form-container">
+            <div class="nome">
+              <label for="nome" id="nome-paciente">Nome</label>
+              <input id="nome" type="text" name="nome" placeholder="Adicione o nome do paciente" required autofocus/>
+            </div>
+            <div class="formato">
+              <label for="formato" id="formato-consulta">Formato da consulta</label>
+              <select id="formato" name="formato" required>
+                <option disabled selected value>Selecione o tipo</option>
+                <option>Consulta presencial</option>
+                <option>Consulta remota</option>  
+              </select>
+            </div>
+            <div class="data">
+              <label for="data" id="data-consulta">Data</label>
+              <input id="data" type="date" name="data" required/>
+            </div>
+            <div class="horario">
+              <label for="horario" id="horario-consulta">Horário</label>
+              <input id="horario" name="horario" type="time" min="10:00" max="19:00" required/>
+            </div>
+            <div class="informacoes">
+              <label for="informacoes" id="informacoes-adicionais">Informações adicionais</label>
+              <textarea name="informacoes" id="informacoes" rows="4" cols="40" placeholder="Inserir informações necessárias"></textarea>
+            </div>
+            <div class="botao-submit">
+              <button type="submit" id="salvar">Salvar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="rodape">
+        <div class="menu-rodape">
+          <button class="botao-rodape">
+            <a href="../index.html">
+              <svg width="20" height="22" viewBox="0 0 20 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icone-rodape">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C2.44772 4 2 4.44772 2 5V19C2 19.5523 2.44772 20 3 20H17C17.5523 20 18 19.5523 18 19V5C18 4.44772 17.5523 4 17 4H3ZM0 5C0 3.34315 1.34315 2 3 2H17C18.6569 2 20 3.34315 20 5V19C20 20.6569 18.6569 22 17 22H3C1.34315 22 0 20.6569 0 19V5Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 0C14.5523 0 15 0.447715 15 1V5C15 5.55228 14.5523 6 14 6C13.4477 6 13 5.55228 13 5V1C13 0.447715 13.4477 0 14 0Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0C6.55228 0 7 0.447715 7 1V5C7 5.55228 6.55228 6 6 6C5.44772 6 5 5.55228 5 5V1C5 0.447715 5.44772 0 6 0Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 8.44772 0.447715 8 1 8H19C19.5523 8 20 8.44772 20 9C20 9.55228 19.5523 10 19 10H1C0.447715 10 0 9.55228 0 9Z" fill="currentColor"/>
+              </svg>
+              <span class="rodape-descricao">Consultas</span>
+            </a>
+          </button>
+        </div>
+        <div class="menu-rodape adicional">
+          <button class="botao-rodape">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="currentColor" class="icone-rodape">
+              <path d="M453-446v136q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625 12.825 0 21.325-8.625T513-310v-136h137q12.75 0 21.375-8.675 8.625-8.676 8.625-21.5 0-12.825-8.625-21.325T650-506H513v-144q0-12.75-8.675-21.375-8.676-8.625-21.5-8.625-12.825 0-21.325 8.625T453-650v144H310q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T310-446h143Zm27.266 366q-82.734 0-155.5-31.5t-127.266-86q-54.5-54.5-86-127.341Q80-397.681 80-480.5q0-82.819 31.5-155.659Q143-709 197.5-763t127.341-85.5Q397.681-880 480.5-880q82.819 0 155.659 31.5Q709-817 763-763t85.5 127Q880-563 880-480.266q0 82.734-31.5 155.5T763-197.684q-54 54.316-127 86Q563-80 480.266-80Zm.234-60Q622-140 721-239.5t99-241Q820-622 721.188-721 622.375-820 480-820q-141 0-240.5 98.812Q140-622.375 140-480q0 141 99.5 240.5t241 99.5Zm-.5-340Z"/>
+            </svg>
+            <span class="rodape-descricao">Nova consulta</span>
+          </button>
+        </div>
+        <div class="menu-rodape">
+          <button class="botao-rodape">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icone-rodape">
+              <path class="icone" fill-rule="evenodd" clip-rule="evenodd" d="M1.46447 13.4645C2.40215 12.5268 3.67392 12 5 12H13C14.3261 12 15.5979 12.5268 16.5355 13.4645C17.4732 14.4021 18 15.6739 18 17V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V17C16 16.2044 15.6839 15.4413 15.1213 14.8787C14.5587 14.3161 13.7956 14 13 14H5C4.20435 14 3.44129 14.3161 2.87868 14.8787C2.31607 15.4413 2 16.2044 2 17V19C2 19.5523 1.55228 20 1 20C0.447715 20 0 19.5523 0 19V17C0 15.6739 0.526784 14.4021 1.46447 13.4645Z" fill="currentColor"/>
+              <path class="icone" fill-rule="evenodd" clip-rule="evenodd" d="M9 2C7.34315 2 6 3.34315 6 5C6 6.65685 7.34315 8 9 8C10.6569 8 12 6.65685 12 5C12 3.34315 10.6569 2 9 2ZM4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5C14 7.76142 11.7614 10 9 10C6.23858 10 4 7.76142 4 5Z" fill="currentColor"/>
+              <path class="icone" fill-rule="evenodd" clip-rule="evenodd" d="M19.0318 12.88C19.1698 12.3453 19.7153 12.0237 20.25 12.1618C21.3227 12.4387 22.273 13.0641 22.9517 13.9397C23.6304 14.8152 23.9992 15.8914 24 16.9993L24 19C24 19.5523 23.5523 20 23 20C22.4477 20 22 19.5523 22 19L22 17.0007C22 17.0006 22 17.0008 22 17.0007C21.9994 16.3361 21.7782 15.6902 21.371 15.165C20.9638 14.6396 20.3936 14.2644 19.75 14.0982C19.2153 13.9602 18.8937 13.4148 19.0318 12.88Z" fill="currentColor"/>
+              <path class="icone" fill-rule="evenodd" clip-rule="evenodd" d="M15.0312 0.881962C15.1682 0.346936 15.713 0.0242632 16.248 0.161251C17.3236 0.436628 18.2768 1.06213 18.9576 1.93914C19.6383 2.81615 20.0078 3.89479 20.0078 5.005C20.0078 6.11521 19.6383 7.19385 18.9576 8.07086C18.2768 8.94787 17.3236 9.57337 16.248 9.84875C15.713 9.98574 15.1682 9.66307 15.0312 9.12804C14.8943 8.59301 15.2169 8.04824 15.752 7.91125C16.3973 7.74603 16.9692 7.37073 17.3777 6.84452C17.7861 6.31831 18.0078 5.67113 18.0078 5.005C18.0078 4.33887 17.7861 3.69169 17.3777 3.16548C16.9692 2.63928 16.3973 2.26398 15.752 2.09875C15.2169 1.96176 14.8943 1.41699 15.0312 0.881962Z" fill="currentColor"/>
+            </svg>
+            <span class="rodape-descricao">Clientes</span>
+          </button>
+        </div>
+        <div class="menu-rodape">
+          <button class="botao-rodape">
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icone-rodape">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6C13.5523 6 14 6.44772 14 7V17C14 17.5523 13.5523 18 13 18C12.4477 18 12 17.5523 12 17V7C12 6.44772 12.4477 6 13 6Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C7.55228 0 8 0.447715 8 1V17C8 17.5523 7.55228 18 7 18C6.44772 18 6 17.5523 6 17V1C6 0.447715 6.44772 0 7 0Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 10C1.55228 10 2 10.4477 2 11V17C2 17.5523 1.55228 18 1 18C0.447715 18 0 17.5523 0 17V11C0 10.4477 0.447715 10 1 10Z" fill="currentColor"/>
+            </svg>
+            <span class="rodape-descricao">Relatórios</span>
+          </button>
+        </div>
+        <div class="menu-rodape">
+          <button class="botao-rodape">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icone-rodape">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7C0 6.44772 0.447715 6 1 6H19C19.5523 6 20 6.44772 20 7C20 7.55228 19.5523 8 19 8H1C0.447715 8 0 7.55228 0 7Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H19C19.5523 0 20 0.447715 20 1C20 1.55228 19.5523 2 19 2H1C0.447715 2 0 1.55228 0 1Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13C0 12.4477 0.447715 12 1 12H19C19.5523 12 20 12.4477 20 13C20 13.5523 19.5523 14 19 14H1C0.447715 14 0 13.5523 0 13Z" fill="currentColor"/>
+            </svg>
+            <span class="rodape-descricao">Menu</span>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
