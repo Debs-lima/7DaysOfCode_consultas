@@ -52,8 +52,8 @@ Começar a implementar a resposividade: tamanho de fonte relativa e ajuste dos c
 **Objetivo**
 <br>
 Reorganizar a lista de consultas para que seja exibida da seguinte forma:
--Layout de 2 colunas, na versão para tablets.
--Layout de 3 colunas, na versão para telas maiores.
+- Layout de 2 colunas, na versão para tablets.
+- Layout de 3 colunas, na versão para telas maiores.
 
 ### Dia 5
 <hr>
@@ -69,12 +69,12 @@ Transformar o menu do rodapé em formato de ‘menu lateral’ sempre que o site
 <br>
 Esconder o botão flutuante no layout desktop. Em seu lugar, exibir um pequeno formulário de cadastro, contendo:
 <br>
--Campo de texto para o nome do paciente
--Campo de seleção de tipo de consulta
--Campo para informar a data da consulta
--Campo para informar o horário da consulta
--Campo para informar observações
--Botão para salvar a nova consulta
+- Campo de texto para o nome do paciente
+- Campo de seleção de tipo de consulta
+- Campo para informar a data da consulta
+- Campo para informar o horário da consulta
+- Campo para informar observações
+- Botão para salvar a nova consulta
 
 ### Dia 7
 <hr>
