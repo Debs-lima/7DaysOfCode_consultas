@@ -1,5 +1,15 @@
-@import url(reset.css);
-@import url(variaveis.css);
+:root {
+  --cinza: #A3A3A3;
+  --preto: #464646;
+  --laranja: #FFB050;
+  --laranja-hover: #ffa83e;
+  --branco: #FFFFFF;
+  --off-white: #ECECEC;
+  --azul: #4894FF;
+  --azul-hover: #4786F0;
+  --cinza-claro: #CFCFCF;
+  --vermelho: #CE0303;
+}
 
 * {
 box-sizing: border-box;
