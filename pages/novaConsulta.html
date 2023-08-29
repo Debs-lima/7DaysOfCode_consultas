@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/novaConsulta.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,23 +19,27 @@
           <div class="form-container">
             <div class="nome">
               <label for="nome" id="nome-paciente">Nome</label>
-              <input id="nome" type="text" name="nome" placeholder="Adicione o nome do paciente" required autofocus/>
+              <input id="nome" type="text" name="nome" placeholder="Adicione o nome do paciente" data-tipo="nome" required autofocus/>
+              <span class="mensagem-erro"></span>
             </div>
             <div class="formato">
               <label for="formato" id="formato-consulta">Formato da consulta</label>
-              <select id="formato" name="formato" required>
-                <option disabled selected value>Selecione o tipo</option>
-                <option>Consulta presencial</option>
-                <option>Consulta remota</option>  
+              <select id="formato" name="formato" data-tipo="formato" required>
+                <option class="padrao" disabled selected value>Selecione o tipo</option>
+                <option class="presencial">Consulta presencial</option>
+                <option class="remota">Consulta remota</option>  
               </select>
+              <span class="mensagem-erro"></span>
             </div>
             <div class="data">
               <label for="data" id="data-consulta">Data</label>
-              <input id="data" type="date" name="data" required/>
+              <input id="data" type="date" name="data" data-tipo="data" required/>
+              <span class="mensagem-erro"></span>
             </div>
             <div class="horario">
               <label for="horario" id="horario-consulta">Horário</label>
-              <input id="horario" name="horario" type="time" min="10:00" max="19:00" required/>
+              <input id="horario" name="horario" type="time" min="10:00" max="19:00" data-tipo="horario" required/>
+              <span class="mensagem-erro"></span>
             </div>
             <div class="informacoes">
               <label for="informacoes" id="informacoes-adicionais">Informações adicionais</label>
@@ -103,5 +106,7 @@
         </div>
       </section>
     </main>
+    <script src="erro.js" type="module"></script>
+    <script src="../main.js" type="module"></script>
   </body>
 </html>

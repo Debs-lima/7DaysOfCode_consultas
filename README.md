@@ -67,7 +67,7 @@ Transformar o menu do rodapé em formato de ‘menu lateral’ sempre que o site
 
 **Objetivo**
 <br>
-Esconder o botão flutuante no layout desktop. Em seu lugar, exibir um pequeno formulário de cadastro, contendo:
+Esconder o botão flutuante no layout desktop. Em seu lugar, exibir um pequeno formulário de cadastro abaixo da coluna de consultas, contendo:
 <br>
 - Campo de texto para o nome do paciente
 - Campo de seleção de tipo de consulta
@@ -75,6 +75,9 @@ Esconder o botão flutuante no layout desktop. Em seu lugar, exibir um pequeno f
 - Campo para informar o horário da consulta
 - Campo para informar observações
 - Botão para salvar a nova consulta
+
+**OBS**
+Ao invés de adicionar o formulário abaixo das consultas, eu criei um __botão no menu__ do layout desktop "Adicionar consultas" e fiz uma __nova página__ contendo o form, com o __tratamento de erros__. Sendo possível acessá-lo também pelo __botão flutuante__ do layout mobile.
 
 ### Dia 7
 <hr>

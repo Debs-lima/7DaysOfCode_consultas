@@ -1,8 +1,6 @@
 const botaoFlutuante = document.querySelector('.botao-flutuante');
 const botaoAdicionar = document.querySelector('.botao-adicionar');
 const tela = document.querySelector('.aplicar-filtro');
-const rodape = document.querySelector('.rodape');
-const desktop = document.querySelector('.desktop');
 
 let clicado = false;
 
@@ -11,9 +9,13 @@ function adicionarBotoes () {
   botaoCamera.classList.add('botao-camera');
   botaoFlutuante.appendChild(botaoCamera);
 
+  const paginaRemota = document.createElement('a');
+  paginaRemota.href = './pages/novaConsulta.html';
+  botaoCamera.appendChild(paginaRemota);
+
   const botaoComponentes = document.createElement('div');
   botaoComponentes.classList.add('botao-componentes');
-  botaoCamera.appendChild(botaoComponentes);
+  paginaRemota.appendChild(botaoComponentes);
 
   const botaoDescricao = document.createElement('span');
   botaoDescricao.classList.add('botao-descricao');
@@ -28,9 +30,13 @@ function adicionarBotoes () {
   botaoLocalizacao.classList.add('botao-localizacao');
   botaoFlutuante.appendChild(botaoLocalizacao);
   
+  const paginaPresencial = document.createElement('a');
+  paginaPresencial.href = './pages/novaConsulta.html';
+  botaoLocalizacao.appendChild(paginaPresencial);
+  
   const botaoComponentesLoc = document.createElement('div');
   botaoComponentesLoc.classList.add('botao-componentes');
-  botaoLocalizacao.appendChild(botaoComponentesLoc);
+  paginaPresencial.appendChild(botaoComponentesLoc);
 
   const botaoDescricaoLoc = document.createElement('span');
   botaoDescricaoLoc.classList.add('botao-descricao');
@@ -65,4 +71,3 @@ function acao () {
 }
 
 botaoAdicionar.addEventListener('click', acao)
-            

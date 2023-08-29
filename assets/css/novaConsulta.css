@@ -1,15 +1,5 @@
-:root {
-  --cinza: #A3A3A3;
-  --preto: #464646;
-  --laranja: #FFB050;
-  --laranja-hover: #ffa83e;
-  --branco: #FFFFFF;
-  --off-white: #ECECEC;
-  --azul: #4894FF;
-  --azul-hover: #4786F0;
-  --cinza-claro: #CFCFCF;
-}
-
+@import url(_reset.css);
+@import url(_variaveis.css);
 
 * {
 box-sizing: border-box;
@@ -24,8 +14,12 @@ body {
   padding: 10px 16px;
 }
 
+main {
+    margin-left: 10px;
+  }
+
 .titulo-form {
-  margin: 40px auto;
+  margin: 40px 0 40px 10px;
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -122,3 +116,31 @@ input::placeholder,
 #salvar:hover {
   background: var(--azul-hover);
 }
+/*ERRO*/
+.erro-edicao > #nome,
+  .erro-edicao > #formato,
+    .erro-edicao > #data,
+      .erro-edicao > #horario {
+  border-color: var(--vermelho);
+}
+
+.mensagem-erro{
+ color: var(--vermelho);
+ font-size: 12px;
+ line-height: 18px;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width:1200px) {
+  .form-container {
+    margin: 0 auto;
+    align-items: center;
+    min-width: 360px;
+  }
+
+  .titulo-form {
+    text-align: center;
+  }
+}
+
